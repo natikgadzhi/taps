@@ -5,21 +5,21 @@
 class Fm < Formula
   desc "A read-only CLI for Fastmail via JMAP"
   homepage "https://github.com/natikgadzhi/fm"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/natikgadzhi/fm/releases/download/v0.2.0/fm_0.2.0_darwin_amd64.tar.gz"
-      sha256 "443b214b61411d256b8ea73b7d616906ecfb8b18ff191af66e078dd618c32721"
+      url "https://github.com/natikgadzhi/fm/releases/download/v0.3.0/fm_0.3.0_darwin_amd64.tar.gz"
+      sha256 "7e3badb28aa68fedc815db56b40a8a7bb67fe8f7a38e3c9aa03a71b6dd6adb54"
 
       define_method(:install) do
         bin.install "fm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/natikgadzhi/fm/releases/download/v0.2.0/fm_0.2.0_darwin_arm64.tar.gz"
-      sha256 "9ed8e8ec52c90b4befd4a1c8d86ccbbc87647e38d9716958b8bb767ec04206f9"
+      url "https://github.com/natikgadzhi/fm/releases/download/v0.3.0/fm_0.3.0_darwin_arm64.tar.gz"
+      sha256 "2b3365c54233ae241b5d7604b2ec0c1d5669e0e83bcc1817f13d060a5897df94"
 
       define_method(:install) do
         bin.install "fm"
@@ -29,15 +29,15 @@ class Fm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/natikgadzhi/fm/releases/download/v0.2.0/fm_0.2.0_linux_amd64.tar.gz"
-      sha256 "855f2c6c2eb7d95cb7b0a31d4391b767e5c805de693a40a67a302c4e69f864f4"
+      url "https://github.com/natikgadzhi/fm/releases/download/v0.3.0/fm_0.3.0_linux_amd64.tar.gz"
+      sha256 "5f4878e6b83ca2de40cb4d2d450191ee7005db698cbfffabf8277615ae288fd7"
       define_method(:install) do
         bin.install "fm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/natikgadzhi/fm/releases/download/v0.2.0/fm_0.2.0_linux_arm64.tar.gz"
-      sha256 "16604cfab0464b5478925dc1715cc496a33bfb6ee4a882bf255b94baa623c8e2"
+      url "https://github.com/natikgadzhi/fm/releases/download/v0.3.0/fm_0.3.0_linux_arm64.tar.gz"
+      sha256 "f14b0c3342405111c048a72df67174f870a0af9e5d66d6a429517106508e27ca"
       define_method(:install) do
         bin.install "fm"
       end
