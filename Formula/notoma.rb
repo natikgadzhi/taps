@@ -5,21 +5,21 @@
 class Notoma < Formula
   desc "One-way sync tool from Notion to Obsidian"
   homepage "https://github.com/natikgadzhi/notoma"
-  version "0.0.1"
+  version "0.2.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/natikgadzhi/notoma/releases/download/v0.0.1/notoma_0.0.1_darwin_amd64.zip"
-      sha256 "42dc1e7c01b9d50558296edbe807b8d7cdda6d3ab8b9f3fa68df573cfb22e0a7"
+      url "https://github.com/natikgadzhi/notoma/releases/download/v0.2.8/notoma_0.2.8_darwin_amd64.zip"
+      sha256 "f0c1901dc1fbc7c7aa90543da620405b6f71229a4270ba27b88c9a7b474d43ed"
 
       define_method(:install) do
         bin.install "notoma"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/natikgadzhi/notoma/releases/download/v0.0.1/notoma_0.0.1_darwin_arm64.zip"
-      sha256 "c0c067af1e24e8eb27e773f827eca2d4e36e9b9a09f18b30aa64c68bfb6942ef"
+      url "https://github.com/natikgadzhi/notoma/releases/download/v0.2.8/notoma_0.2.8_darwin_arm64.zip"
+      sha256 "ed3b7be47d9e8d95e330c9745195fc869a77c10c0c60ad1e5936da4246fc1a42"
 
       define_method(:install) do
         bin.install "notoma"
@@ -29,15 +29,15 @@ class Notoma < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/natikgadzhi/notoma/releases/download/v0.0.1/notoma_0.0.1_linux_amd64.tar.gz"
-      sha256 "2d1718e1fd2e79889b327d131cdfd6d5250e3a2b13696862c563e4aa570031d6"
+      url "https://github.com/natikgadzhi/notoma/releases/download/v0.2.8/notoma_0.2.8_linux_amd64.tar.gz"
+      sha256 "4f64e0bdab874129aad0f39144e43af9c910b75c280b90ab2bc9b2535abf92e7"
       define_method(:install) do
         bin.install "notoma"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/natikgadzhi/notoma/releases/download/v0.0.1/notoma_0.0.1_linux_arm64.tar.gz"
-      sha256 "1c2c248641fd56f9355fe82ddfeb6d872e21b73983bb501121152d1cc2d04f5c"
+      url "https://github.com/natikgadzhi/notoma/releases/download/v0.2.8/notoma_0.2.8_linux_arm64.tar.gz"
+      sha256 "7b636640babe7b5a71dc4ae6fe432cf229f6233f210fafbc3b215e461abe6209"
       define_method(:install) do
         bin.install "notoma"
       end
